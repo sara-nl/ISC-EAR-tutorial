@@ -1,17 +1,17 @@
 # Energy Management and Optimization with EAR
-## Tutorial ISC 2024
-https://app.swapcard.com/event/isc-high-performance-2024/planning/UGxhbm5pbmdfMTgyNTYyMw==
+## Tutorial ISC 2025
+https://app.swapcard.com/event/isc-high-performance-2025/planning/UGxhbm5pbmdfMjU4MTc5NA==
 
 ## Schedule
-### May 12 2024 (start 14:00 end 18:00)
-- (14:00-15:00) Welcome  & Introduction to EAR
-- (15:00-16:30) Energy Monitoring (Basic use cases)
+### June 13 2025 (start 09:00 end 13:00)
+- (09:00-10:00) Welcome  & Introduction to EAR
+- (10:00-11:30) Energy Monitoring (Basic use cases)
    - Running CPU/GPU kernals with EAR
    - Job energy monitoring & accounting
    - Energy efficiency vs resource consumption
    - Energy efficiency vs architecture
    - CPU DVFS
-- (16:30-18:00) Energy Optimization (Advanced use cases)
+- (11:30-13:00) Energy Optimization (Advanced use cases)
    - Singularity
    - Energy optimization policies
    - EAR data visualization
@@ -24,7 +24,6 @@ The tutorials of this class can be found in the directory [tutorials](https://gi
 3. [DVFS tutorial](tutorials/dvfs/README.md)
 4. [Energy Optimization tutorial](tutorials/policies/README.md)
 5. [EAR Data visualization](tutorials/visualization/README.md)
-
 
 
 ## Practical information
