@@ -26,7 +26,6 @@ The tutorials of this class can be found in the directory [tutorials](https://gi
 5. [EAR Data visualization](tutorials/visualization/README.md)
 
 
-
 ## Practical information
 - [How to connect to Snellius](#how-to-connect-to-snellius)
 - [How to interact with the course.](#how-to-interact-with-the-course)
