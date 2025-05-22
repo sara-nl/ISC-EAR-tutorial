@@ -66,15 +66,8 @@ srun myapplication
 ```
 
 
-
-
 <h2 id="tools">EAR Tools</h2>
 
-EAR is available on Snellius as a module
-```
-module load 2022
-module load ear
-```
 ### Job accounting (eacct)
 The eacct command shows accounting information stored in the EAR DB for jobs (and step) IDs. The command uses EAR’s configuration file to determine if the user running it is privileged or not, as non-privileged users can only access their information. It provides the following options. The ear module needs to be loaded to use the eacct command.
 
