@@ -155,7 +155,7 @@ In this course we will use the "Multi-zone versions of NPB" (NPB-MZ). These are 
 | D | 1632  | 1216 | 34 |
 
 Example jobscript
-[NPB_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/tutorials/monitoring_ear/NPB_job.sh)
+[NPB_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/NPB_job.sh)
 
 
 
@@ -169,17 +169,17 @@ https://github.com/UCL-CCS/HemePure-GPU
 We will be running through an example of pressure driven flow through a bifurcation available in the HemeLB download.
 
 CPU example jobscript
-[hemepure_cpu_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/tutorials/monitoring_ear/hemepure_cpu_job.sh)
+[hemepure_cpu_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/hemepure_cpu_job.sh)
 
 GPU example jobscript
-[hemepure_gpu_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/tutorials/monitoring_ear/hemepure_gpu_job.sh)
+[hemepure_gpu_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/hemepure_gpu_job.sh)
 
 ### Palabos
 
 > The Palabos (Parallel Lattice Boltzmann Solver) library is a framework for general-purpose computational fluid dynamics (CFD), with a kernel based on the lattice Boltzmann method. The case we use in this course is a simulation of blood flow in a inside the 3D aneurysm geometry. https://palabos.unige.ch/
 
 example jobscript
-[palabos_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/tutorials/monitoring_ear/palabos_job.sh)
+[palabos_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/palabos_job.sh)
 
 
 ### GROMACS
@@ -220,5 +220,6 @@ pip install torchvision==0.16.2
 ```
 
 Example jobscript
-[PyTorch_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/tutorials/monitoring_ear/PyTorch_job.sh)
+[PyTorch_job.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/PyTorch_job.sh)
+[PyTorch_job_policy.sh](https://github.com/sara-nl/energy-efficient-computing/blob/main/scripts/PyTorch_job.policy.sh)
 

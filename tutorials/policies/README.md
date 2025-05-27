@@ -32,7 +32,8 @@ The image below illustrates the usage of EAR to show the characteristics of a va
 
 ![Application_char](../../images/CPU_characterization_plot.png)
 
-## EAR Policies
+## EAR Policies 
+
 
 By understanding an application's characteristics we can try to "guess" at which Policy will be best suited for an application. 
 
@@ -40,16 +41,22 @@ EAR offers three energy policies plugins: min_energy, min_time and monitoring. T
 
 The 2 optimization policies `min_time` and `min_energy` will tune the frequency for you. The energy policy is selected by setting the `--ear-policy=policy` option when submitting a SLURM job.
 
-### min_energy 
+### CPU: min_energy (--ear-policy=min_energy)
 
 The goal of this policy is to minimize the energy consumed with a limit to the performance degradation. 
 
-This limit is set in the SLURM `--ear-policy-th` option or the configuration file. The `min_energy` policy will select the optimal frequency that minimizes energy enforcing (performance degradation <= parameter). When executing with this policy, applications starts at default frequency(specified at ear.conf).
+This limit is set in the SLURM `--ear-policy-th` option or the configuration file. The `min_energy` policy will select the optimal frequency that minimizes energy enforcing (performance degradation <= parameter). When executing with this policy, applications starts at default frequency(specified at ear.conf). This policy optimizes only the CPU.
 ```
 PerfDegr = (CurrTime - PrevTime) / (PrevTime)
 ```
 
-### min_time
+### GPU: min_energy (--ear-policy=optimize)
+
+This policy behaves as the CPU min_energy but the optimization is applied only to the GPU device whereas the CPU frequency remains constant. 
+
+[Pytorch with extra metrics and GPU optimization](../../scripts/PyTorch_job.policy.sh)
+
+### CPU: min_time (--ear-policy=min_time)
 
 
 The goal of this policy is to improve the execution time while guaranteeing a minimum ratio between performance benefit and frequency increment that justifies the increased energy consumption from this frequency increment. The policy uses the SLURM parameter option mentioned above as a minimum efficiency threshold.

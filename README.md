@@ -17,7 +17,7 @@ https://app.swapcard.com/event/isc-high-performance-2025/planning/UGxhbm5pbmdfMj
    - EAR data visualization
 
 ## Tutorials
-The tutorials of this class can be found in the directory [tutorials](https://github.com/sara-nl/ISC-2024-EAR-tutorial/tree/main/tutorials)
+The tutorials of this class can be found in the directory [tutorials](https://github.com/sara-nl/ISC-EAR-tutorial/tree/main/tutorials)
 
 1. [General Monitoring tutorial](tutorials/monitoring_general/README.md)
 2. [EAR Monitoring tutorial](tutorials/monitoring_ear/README.md)
