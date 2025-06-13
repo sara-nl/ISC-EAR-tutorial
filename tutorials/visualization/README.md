@@ -10,11 +10,16 @@ In this tutorial we propose you to play around with EAR data from two points of 
 
 A tool that automatically reads and visualises data provided by the EAR software. ear-analytics is a cli program written in Python which lets you plot the EAR data given by some of its commands or by using some report plug-in offered by the EAR Library (EARL). The main visualisation target is to show runtime metrics collected by EARL in a timeline graph. 
 
-You can load the tool via the following commands:
+You can build the tool via the following commands:
 
 ```
 module load 2024
-module load Ear-job-analytics/5.0-gfbf-2024a
+module load SciPy-bundle/2024.05-gfbf-2024a
+
+git clone --recurse-submodules git@github.com:eas4dc/ear-job-visualization.git
+
+cd ear-job-visualization/
+pip install .
 ```
 
 To create runtime graphs, for example, for jobid 5687690 step 0, you can execute the following command. You can append additional metrics at the end separated by spaces. To see the whole list of metrics execute ear-job-analytics -h
