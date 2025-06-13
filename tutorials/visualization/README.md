@@ -21,6 +21,20 @@ git clone --recurse-submodules git@github.com:eas4dc/ear-job-visualization.git
 cd ear-job-visualization/
 pip install .
 ```
+IF YOU DO NOT HAVE AN SSH KEY
+```
+module load 2024
+module load SciPy-bundle/2024.05-gfbf-2024a
+
+git clone https://github.com/eas4dc/ear-job-visualization.git
+cd ear-job-visualization
+git submodule set-url src/ear_analytics https://github.com/eas4dc/ear_analytics.git
+git submodule update --init
+
+pip install .
+```
+
+
 
 To create runtime graphs, for example, for jobid 5687690 step 0, you can execute the following command. You can append additional metrics at the end separated by spaces. To see the whole list of metrics execute ear-job-analytics -h
 
